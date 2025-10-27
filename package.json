@@ -1,0 +1,29 @@
+{
+  "name": "Academy",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "private": true,
+  "scripts": {
+    "dev": "cds watch",
+    "start": "cds-serve",
+    "deploy": "cds deploy --to sqlite:./sqlite.db",
+    "reset": "rimraf ./sqlite.db && npm run deploy",
+    "kill_port": "kill -9 $(lsof -t -i:4004)"
+  },
+  "dependencies": {
+    "@sap/cds": "^9",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^2",
+    "rimraf": "^5"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": { "database": "sqlite.db" }
+      }
+    }
+  }
+}
