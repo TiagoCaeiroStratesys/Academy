@@ -18,11 +18,11 @@ DELETE http://localhost:4004/odata/v4/catalog/Equipments(ID='e1111111-1111-1111-
 Accept: application/json
 
 
-### ➤ Lista todas as reservas
+### ➤ Lista todas as reservas          
 GET http://localhost:4004/odata/v4/catalog/Reservations
 
 ### DELETE uma reserva pelo ID (substitui o guid)
-DELETE http://localhost:4004/odata/v4/catalog/Reservations(ID='11111111-1111-1111-1111-111111111111')
+DELETE http://localhost:4004/odata/v4/catalog/Reservations(ID='33333333-3333-3333-3333-333333333333')
 Accept: application/json
 
 
@@ -39,7 +39,7 @@ Content-Type: application/json
   "code": "R-301",
   "name": "Sala Teste",
   "capacity": 15,
-  "location": "Edifício C"
+  "location": "TESTEEEEEEEEEEEEEEEEEEEEEEE"
 }
 
 
@@ -51,7 +51,7 @@ Content-Type: application/json
   "room_ID": "GUID_DA_TUA_SALA_AQUI",
   "title": "Reunião Teste",
   "startAt": "2025-10-28T09:00:00Z",
-  "endAt": "2025-10-28T10:00:00Z",
+  "endAt": "2025-10-28T07:00:00Z",
   "requester": "João",
   "status": "CONFIRMED"
 }
