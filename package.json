@@ -1,0 +1,28 @@
+{
+  "name": "Academy",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "dependencies": {
+    "@sap-cloud-sdk/connectivity": "^3",
+    "@sap-cloud-sdk/http-client": "^3",
+    "@sap-cloud-sdk/resilience": "^3",
+    "@sap/cds": "^9",
+    "cds-swagger-ui-express": "^0.10.0",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^2"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "private": true,
+  "cds": {
+    "requires": {
+      "metadata": {
+        "kind": "odata-v2",
+        "model": "srv/external/metadata"
+      }
+    }
+  }
+}
